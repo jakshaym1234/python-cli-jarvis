@@ -8,7 +8,7 @@ def welcome():
     print(f"Welcome to API JARVIS")
     print(f"------------------------------------------------")
 def main():
-    options = [name for name in os.listdir("./") if os.path.isdir(os.path.join("./", name))] 
+    options = ["catapi", "dogapi"] 
     terminal_menu = TerminalMenu(options)
     menu_entry_index = terminal_menu.show()
 
